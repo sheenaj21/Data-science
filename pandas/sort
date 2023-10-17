@@ -1,0 +1,15 @@
+import pandas as pd
+import numpy as np
+
+student = {'RollNo':[1,2,3,4,5],
+           'name':['Lekshmi','Krishnaveni','Neeraja','Sheena','Shivashankar'],
+          'Department':['MCA','MCA','CSE','MECH','MBA'],
+          'Semester':['s1','s2','s1','s2','s1']}
+df=pd.DataFrame(student)
+print("\n\n\n\nBefore Sorting")
+print("--------------")
+print(df)
+print("\n\n\nAfter Sorting")
+print("--------------")
+df.sort_values(by=['name','RollNo'], ascending=False)
+print(df)
